@@ -1,4 +1,4 @@
-[
+const icone = [
 	{
 		name: 'cat',
 		prefix: 'fa-',
@@ -96,3 +96,15 @@
 		family: 'fas'
 	}
 ];
+
+
+//Per ogni elemento del array devo prendere prefix-family-name 
+//creo un div con questi dati
+//inserisco il div nel mio html
+const iconCont = document.getElementById('icon_container')
+icone.forEach((element) => {
+    iconCont.innerHTML = `<div class="icona ${element.family} ${element.prefix}${element.name}">ciao</div>`
+    console.log(`${element.family} ${element.prefix}${element.name}`)
+})
+
+
