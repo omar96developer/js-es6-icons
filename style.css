@@ -27,9 +27,9 @@
     flex-wrap: wrap;
     padding: 10px;
     background-color: lightgray;
+    align-content: flex-start;
 }
 .icona{
-    border: 1px solid black;
     width: calc(100% / 5 - 120px);
     height: 100px;
     margin: 20px 60px;
@@ -38,6 +38,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: white;
 }
 
 .icona i {
