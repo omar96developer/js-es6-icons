@@ -96,15 +96,23 @@ const icone = [
 		family: 'fas'
 	}
 ];
-
-
 //Per ogni elemento del array devo prendere prefix-family-name 
 //creo un div con questi dati
 //inserisco il div nel mio html
-const iconCont = document.getElementById('icon_container')
-icone.forEach((element) => {
-    iconCont.innerHTML = `<div class="icona ${element.family} ${element.prefix}${element.name}">ciao</div>`
-    console.log(`${element.family} ${element.prefix}${element.name}`)
+
+const iconCont = document.getElementById("icon_container");
+
+icone.forEach ((element) => {
+	//iconCont.innerHTML += `<div class="icona"><i class="${element.family} ${element.prefix}${element.name}"></i><p>${element.name}</p></div>`
+	if(element.type == 'animal'){
+		iconCont.innerHTML += `<div class="icona" ><i style="color:blue" class="${element.family} ${element.prefix}${element.name}"></i><p>${element.name}</p></div>`
+	} else if (element.type == 'vegetable'){
+		iconCont.innerHTML += `<div class="icona" ><i style="color:yellow" class="${element.family} ${element.prefix}${element.name}"></i><p>${element.name}</p></div>`
+
+	} else if (element.type == 'user'){
+		iconCont.innerHTML += `<div class="icona" ><i style="color:purple" class="${element.family} ${element.prefix}${element.name}"></i><p>${element.name}</p></div>`
+
+	} 
 })
 
 

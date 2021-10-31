@@ -9,23 +9,31 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
+
 <body>
     <header>
         <div class="titolo"><h1>Fonticons</h1></div>
     </header>
     <main>
-      
+
+      <!-- SECTION SELCT TYPE -->
         <div class="select_container">
-            <span>FILTRA PER TIPO</span>
-            <select class="">
-            <option selected value="">Tutte</option>
+            <label for="icon_type">FILTRA PER TIPO:</label>
+            <select name="icon_type" class="icon_selector">
+                <option value="All">All</option>
+                <option value="Animal">Animal</option>
+                <option value="Vegetables">Vegetable</option>
+                <option value="User">User</option>
             </select>
         </div>
 
+        <!-- SECTION ICON SELECTED BY TYPE -->
         <div class="icon_container" id="icon_container">
-            <div class="icona"><i class="fas fa-cat"></i></div>
+         <!-- <div class="icona">
+             <i class="fas fa-cat"></i>
+             <p></p>
+            </div> -->
            
-
         </div>
         
     </main>
